@@ -30,22 +30,22 @@
           <nav class="menu__body">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="#contacts">Contacts</a>
+                <a href="#contacts" onclick="scrollToTarget(event, 'contacts')">Contacts</a>
               </li>
               <li class="menu__item">
-                <a href="#about">About me</a>
+                <a href="#about" onclick="scrollToTarget(event, 'about')">About me</a>
               </li>
               <li class="menu__item">
-                <a href="#skills">Skills</a>
+                <a href="#skills" onclick="scrollToTarget(event, 'skills')">Skills</a>
               </li>
               <li class="menu__item">
-                <a href="#education">Education</a>
+                <a href="#education" onclick="scrollToTarget(event, 'education')">Education</a>
               </li>
               <li class="menu__item">
-                <a href="#experience">Experience</a>
+                <a href="#experience" onclick="scrollToTarget(event, 'experience')">Experience</a>
               </li>
               <li class="menu__item">
-                <a href="#courses">Courses</a>
+                <a href="#courses" onclick="scrollToTarget(event, 'courses')">Courses</a>
               </li>
             </ul>
           </nav>
@@ -244,6 +244,7 @@
       </p>
     </footer>
   </div>
+  <div class="overlay" id="overlay"></div>
   <script src="js/index.js"></script>
 </body>
 </html>
