@@ -3,22 +3,25 @@
 const overlay = document.getElementById('overlay')
 const menuIcon = document.querySelector('.menu__icon');
 const menuBody = document.querySelector('.menu__body');
-const mediaMobile = 'max-width: var(--md3)';
 const menuItem = document.querySelectorAll('.menu__item');
 
 const isActive = function() {
-  overlay.classList.toggle('_active');
-  menuIcon.classList.toggle('_active');
-  menuBody.classList.toggle('_active');
+  if (window.matchMedia('(max-width: 767px)').matches) {
+    const isActiveOverlay = overlay.classList.contains('_active');
+    const isActiveMenuIcon = menuIcon.classList.contains('_active');
+    const isActiveMenuBody = menuBody.classList.contains('_active');
+
+    overlay.classList.toggle('_active', !isActiveOverlay);
+    menuIcon.classList.toggle('_active', !isActiveMenuIcon);
+    menuBody.classList.toggle('_active', !isActiveMenuBody);
+
+    for ( let i = 0; i < menuItem.length; i++) {
+      menuItem[i].onclick = isActive;
+    }
+  }
 }
 
 menuIcon.onclick = isActive;
-
-if ( mediaMobile ) {
-  for ( let i = 0; i < menuItem.length; i++) {
-    menuItem[i].onclick = isActive;
-  }
-}
 
 // SCROLL
 
