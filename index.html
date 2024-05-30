@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>CV Anastasia Volovik</title>
 </head>
 <body>
@@ -17,25 +19,38 @@
         </div>
       </div>
       <div class="col_right header__info">
-        <nav class="header__desctop desctop">
-          <ul class="header__menu menu">
-            <li>
-              <a href="#contacts">Contacts</a>
-            </li>
-            <li>
-              <a href="#about">About me</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#education">Education</a>
-            </li>
-            <li>
-              <a href="#courses">Courses</a>
-            </li>
-          </ul>
-        </nav>
+
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="#contacts">Contacts</a>
+              </li>
+              <li class="menu__item">
+                <a href="#about">About me</a>
+              </li>
+              <li class="menu__item">
+                <a href="#skills">Skills</a>
+              </li>
+              <li class="menu__item">
+                <a href="#education">Education</a>
+              </li>
+              <li class="menu__item">
+                <a href="#experience">Experience</a>
+              </li>
+              <li class="menu__item">
+                <a href="#courses">Courses</a>
+              </li>
+            </ul>
+          </nav>
+          
+        </div>
         <div class="header__titles">
           <h1 class="header__title">Anastasia Volovik</h1>
           <h2 class="header__subtitle">Trainee Frontend developer</h2>
@@ -50,23 +65,38 @@
             <img src="assets/images/cake.png" alt="birthday">&nbsp;February 6, 1989 (35 y.o.)
           </li>
         </ul>
-        <section id="contacts" class="main__block">
+        <section id="contacts" class="main__block contacts">
           <h3 class="main__title">Contacts</h3>
           <ul>
             <li class="main__item">
-              <img src="assets/images/periscope.png" alt="location">&nbsp;Mogilev, Belarus
+              <div class="contacts__item">
+                <img src="assets/images/periscope.png" alt="location">
+                &nbsp;Mogilev, Belarus
+              </div>
             </li>
             <li class="main__item">
-              <img src="assets/images/phone-solid.png" alt="phone">&nbsp;+375 29 246-83-31
+              <div class="contacts__item">
+                <img src="assets/images/phone-solid.png" alt="phone">
+              </div>
+              &nbsp;+375 29 246-83-31
             </li>
             <li class="main__item">
-              <img src="assets/images/envelope-solid.png" alt="e-mail">&nbsp;nastasia.volovik@gmail.com
+              <div class="contacts__item">
+                <img src="assets/images/envelope-solid.png" alt="e-mail">
+              </div>
+              &nbsp;nastasia.volovik@<wbr>gmail.com
             </li>
             <li class="main__item">
-              <img src="assets/images/linkedin.png" alt="linkedin"><a href="https://www.linkedin.com/in/anastasia-volovik/">&nbsp;https://www.linkedin.com/in/<br/>anastasia-volovik</a>
+              <a class="contacts__link" href="https://www.linkedin.com/in/anastasia-volovik/">
+                <img src="assets/images/linkedin.png" alt="linkedin">
+                &nbsp;https://www.<wbr>linkedin.<wbr>com/<wbr>in/<wbr>anastasia-<wbr>volovik
+              </a>
             </li>
             <li class="main__item">
-              <img src="assets/images/github.png" alt="github"><a href="https://github.com/AnaVolovik">&nbsp;https://github.com/AnaVolovik</a>
+              <a class="contacts__link" href="https://github.com/AnaVolovik">
+                <img src="assets/images/github.png" alt="github">
+                &nbsp;https://github.com/<wbr>Ana<wbr>Volovik
+              </a>
             </li>
           </ul>
         </section>
@@ -80,7 +110,7 @@
                 <img src="assets/images/check-solid.png" alt="skills">&nbsp;JavaScript
               </li>
               <li class="main__item">
-                <img src="assets/images/check-solid.png" alt="skills">&nbsp;React
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;React (Basic)
               </li>
               <li class="main__item">
                 <img src="assets/images/check-solid.png" alt="skills">&nbsp;PHP (Basic)
@@ -92,6 +122,9 @@
                 <img src="assets/images/check-solid.png" alt="skills">&nbsp;GitHub, GitLab
               </li>
               <li class="main__item">
+                <img src="assets/images/check-solid.png" alt="skills">&nbsp;Block Element Modifier (BEM)
+              </li>
+              <li class="main__item">
                 <img src="assets/images/check-solid.png" alt="skills">&nbsp;Figma, Adobe Photoshop, CorelDraw, Adobe Animate, 3ds Max
               </li>
             </ul>
@@ -99,15 +132,15 @@
         <section id="education" class="main__block">
           <h3 class="main__title">Education</h3>
             <ul>
-              <li class="main__item">Belarusian-Russian University /<br>
-                <span class="accent">Commercial activities of small and medium enterprises</span><br>
-                <span class="small_text">2007 - 2012</span><br>
-                <span class="small_text">Inventory management, organization of enterprise warehousing, procurement of necessary raw materials and components, distribution of finished products, logistics</span>
-              </li>
-              <li class="main__item">School of Business and Management of Technology of BSU /<br>
+              <li class="main__item">School of Business and Management of Technology of BSU&nbsp;/<br>
                 <span class="accent">Web design and computer graphics</span><br>
                 <span class="small_text">Mar 2021 - Nov 2022</span><br>
                 <span class="small_text">UX and UI design, web technologies, promotion, web project management</span>
+              </li>
+              <li class="main__item">Belarusian-Russian University&nbsp;/<br>
+                <span class="accent">Commercial activities of small and medium enterprises</span><br>
+                <span class="small_text">2007 - 2012</span><br>
+                <span class="small_text">Inventory management, organization of enterprise warehousing, procurement of necessary raw materials and components, distribution of finished products, logistics</span>
               </li>
             </ul>
         </section>
@@ -120,7 +153,7 @@
         </section>
       </div>
       <div class="col_right main__info">
-        <section id="about" class="main__block">
+        <section id="about" class="main__block about">
           <h3 class="main__title">About me</h3>
           <hr class="main__line">
           <p class="main__item">
@@ -197,7 +230,7 @@
             </li>
             <li class="courses__item">
               <a href="https://rs.school/courses/javascript-preschool-ru">
-                RS SchoolRS School&nbsp;&mdash;&nbsp;JS/FE Pre-School 2022Q4
+                RS SchoolRS School&nbsp;&mdash;&nbsp;JS/FE Pre-School 2022Q4 (March, 2023)
               </a>
             </li>
           </ul>
